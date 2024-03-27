@@ -1,0 +1,12 @@
+{
+  "name": "nginx-upstreamconfgen",
+  "version": "1.0.0",
+  "description": "Small script that is used for generating a nginx config file which contains multiple upstreams by fetching the IP Address to use from `docker inspect`.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ."
+  },
+  "keywords": ["nginx", "config-generator", "docker"],
+  "author": "Kate Ward <kate@dariox.club>",
+  "license": "Apache-2.0"
+}
