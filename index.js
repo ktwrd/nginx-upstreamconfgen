@@ -182,7 +182,7 @@ async function spawnAsync(command, args) {
             }
             innerLines += `    server ${addr}:${item.port}${extra}; // ${networkPair[0]}\n`;
         }
-        innerLines = `// ${item.containerName}\nupstream ${item.upstreamName} {\n${innerLines}}`;
+        innerLines = `upstream ${item.upstreamName} {\n${innerLines}}`;
         outputContent += innerLines + '\n\n';
     }
 
