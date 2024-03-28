@@ -181,6 +181,7 @@ async function spawnAsync(command, args) {
                 addr = 'localhost';
             }
             innerLines += `    server ${addr}:${item.port}${extra}; // ${networkPair[0]}\n`;
+            console.log(`${item.containerName.padEnd(30)} -> ${addr}:${item.port} (${item.upstreamName})`);
         }
         innerLines = `upstream ${item.upstreamName} {\n${innerLines}}`;
         outputContent += innerLines + '\n\n';
